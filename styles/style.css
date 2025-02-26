@@ -1,0 +1,128 @@
+:root {
+    --black: #1C232B;
+    --grey: #6C7289;
+    --cream: #F2EAE2;
+    --white: #FFFFFF;
+    --green-500: #3D8168;
+    --green-700: #1A4032;
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+article {
+    background-color: var(--white);
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 600px;
+}
+.product-picture {
+    width: 300px;
+}
+.product-picture-mobile {
+    display: none;
+}
+.container-product-info {
+    padding: 32px;
+}
+.category {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 5px;
+    color: var(--grey);
+    margin: 0;
+}
+.title,
+.new-price{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+.title {
+    color: var(--black);
+    margin: 24px 0;
+}
+.description {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: var(--grey);
+    margin: 0;
+}
+.add-button {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 110%;
+    color: var(--white);
+}
+.container-price {
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+}
+.old-price {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 120%;
+    color: var(--grey);
+    margin: 0;
+    text-decoration: line-through;
+}
+.new-price {
+    color: var(--green-500);
+    margin: 0 16px 0 0;
+ }
+button {
+    padding: 16px 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-500);
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--green-700);
+}
+button:focus {
+    background-color: var(--green-700);
+}
+button img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    article {
+        flex-direction: column;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 350px;
+    }
+    .product-picture {
+        display: none;
+    }
+    .product-picture-mobile {
+        display: inline-block;
+        width: 350px;
+        height: 342px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .container-price {
+        margin: 24px 0;
+    }
+}

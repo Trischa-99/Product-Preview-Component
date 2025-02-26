@@ -1,0 +1,55 @@
+.attribution {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    transition: width 0.5s, height 0.5s;
+    background-color: #b7dff3;
+}
+.attribution:hover {
+    width: 210px;
+    height: 75px;
+    border-radius: 10px;
+}
+.display-on-hover{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out,
+    visibility 0s linear;
+    pointer-events: none;
+}
+.attribution:hover .display-on-hover{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.15s ease-out 0.4s,
+    visibility 0s linear 0.4s;
+}
+.attribution:not(:hover) .display-on-hover {
+    transition: opacity 0.3s ease-in,
+    visibility 0s linear;
+}
+.display-on-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.frontend-mentor,
+.my-profile {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 4px;
+}
+.frontend-mentor a,
+.my-profile a {
+    text-decoration: none;
+    color: #6a4991;
+}
+.frontend-mentor a:hover,
+.my-profile a:hover {
+    color: #42949f;
+}
