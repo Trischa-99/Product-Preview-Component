@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://github.com/Trischa-99/Product-Preview-Component.git)
+- [Live Site URL](https://trischa-99.github.io/Product-Preview-Component/)
 
 ## My process
 
